@@ -1,0 +1,615 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://Environment.tres" type="Environment" id=1]
+[ext_resource path="res://Scripts/EditorPanel.cs" type="Script" id=2]
+[ext_resource path="res://Theme.tres" type="Theme" id=3]
+[ext_resource path="res://Hack_Regular.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="StyleBoxLine" id=1]
+thickness = 10
+
+[sub_resource type="InputEventKey" id=2]
+scancode = 16777224
+
+[sub_resource type="ShortCut" id=3]
+shortcut = SubResource( 2 )
+
+[sub_resource type="ArrayMesh" id=4]
+surfaces/0 = {
+"aabb": AABB( -0.500577, -0.500577, -0.500577, 1.00115, 1.00116, 1.00116 ),
+"array_data": PoolByteArray( 214, 37, 0, 191, 214, 37, 0, 63, 214, 37, 0, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 0, 0, 0, 214, 37, 0, 63, 214, 37, 0, 63, 214, 37, 0, 191, 0, 0, 129, 0, 129, 0, 0, 127, 85, 57, 0, 0, 214, 37, 0, 63, 214, 37, 0, 63, 214, 37, 0, 63, 0, 0, 127, 0, 127, 0, 0, 127, 85, 53, 0, 0, 214, 37, 0, 191, 214, 37, 0, 63, 214, 37, 0, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 60, 0, 0, 214, 37, 0, 191, 214, 37, 0, 191, 214, 37, 0, 63, 0, 0, 127, 0, 127, 0, 0, 127, 0, 0, 0, 56, 214, 37, 0, 63, 214, 37, 0, 191, 214, 37, 0, 191, 0, 0, 129, 0, 129, 0, 0, 127, 85, 57, 0, 56, 214, 37, 0, 63, 214, 37, 0, 191, 214, 37, 0, 63, 0, 0, 127, 0, 127, 0, 0, 127, 85, 53, 0, 56, 214, 37, 0, 191, 214, 37, 0, 191, 214, 37, 0, 191, 0, 0, 129, 0, 129, 0, 0, 127, 0, 60, 0, 56, 214, 37, 0, 63, 214, 37, 0, 63, 214, 37, 0, 63, 127, 0, 0, 0, 0, 0, 129, 127, 85, 53, 0, 0, 214, 37, 0, 191, 214, 37, 0, 63, 214, 37, 0, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 56, 214, 37, 0, 63, 214, 37, 0, 63, 214, 37, 0, 191, 127, 0, 0, 0, 0, 0, 129, 127, 85, 57, 0, 0, 214, 37, 0, 191, 214, 37, 0, 63, 214, 37, 0, 63, 129, 0, 0, 0, 0, 0, 127, 127, 85, 53, 0, 56, 214, 37, 0, 63, 214, 37, 0, 191, 214, 37, 0, 63, 127, 0, 0, 0, 0, 0, 129, 127, 85, 53, 0, 56, 214, 37, 0, 191, 214, 37, 0, 191, 214, 37, 0, 191, 129, 0, 0, 0, 0, 0, 127, 127, 0, 0, 0, 60, 214, 37, 0, 63, 214, 37, 0, 191, 214, 37, 0, 191, 127, 0, 0, 0, 0, 0, 129, 127, 85, 57, 0, 56, 214, 37, 0, 191, 214, 37, 0, 191, 214, 37, 0, 63, 129, 0, 0, 0, 0, 0, 127, 127, 85, 53, 0, 60, 214, 37, 0, 63, 214, 37, 0, 63, 214, 37, 0, 63, 0, 127, 0, 0, 129, 0, 0, 127, 85, 53, 0, 56, 214, 37, 0, 191, 214, 37, 0, 191, 214, 37, 0, 63, 0, 129, 0, 0, 127, 0, 0, 127, 85, 57, 0, 56, 214, 37, 0, 191, 214, 37, 0, 63, 214, 37, 0, 63, 0, 127, 0, 0, 129, 0, 0, 127, 85, 57, 0, 56, 214, 37, 0, 63, 214, 37, 0, 191, 214, 37, 0, 63, 0, 129, 0, 0, 127, 0, 0, 127, 0, 60, 0, 56, 214, 37, 0, 63, 214, 37, 0, 63, 214, 37, 0, 191, 0, 127, 0, 0, 129, 0, 0, 127, 85, 53, 0, 60, 214, 37, 0, 191, 214, 37, 0, 191, 214, 37, 0, 191, 0, 129, 0, 0, 127, 0, 0, 127, 85, 57, 0, 60, 214, 37, 0, 191, 214, 37, 0, 63, 214, 37, 0, 191, 0, 127, 0, 0, 129, 0, 0, 127, 85, 57, 0, 60, 214, 37, 0, 63, 214, 37, 0, 191, 214, 37, 0, 191, 0, 129, 0, 0, 127, 0, 0, 127, 0, 60, 0, 60 ),
+"array_index_data": PoolByteArray( 0, 0, 4, 0, 2, 0, 2, 0, 4, 0, 6, 0, 1, 0, 5, 0, 3, 0, 3, 0, 5, 0, 7, 0, 8, 0, 12, 0, 10, 0, 10, 0, 12, 0, 14, 0, 9, 0, 13, 0, 11, 0, 11, 0, 13, 0, 15, 0, 16, 0, 20, 0, 18, 0, 18, 0, 20, 0, 22, 0, 17, 0, 21, 0, 19, 0, 19, 0, 21, 0, 23, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 36,
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="SpatialMaterial" id=5]
+flags_unshaded = true
+albedo_color = Color( 1, 0.701961, 0, 1 )
+
+[sub_resource type="SpatialMaterial" id=6]
+flags_unshaded = true
+albedo_color = Color( 0, 0.552941, 1, 1 )
+
+[sub_resource type="CapsuleMesh" id=7]
+radius = 0.197
+mid_height = 0.394
+
+[sub_resource type="DynamicFont" id=9]
+size = 180
+outline_size = 9
+outline_color = Color( 0, 0, 0, 1 )
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 4 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EditorPanel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 3 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+MenuButtonsPath = NodePath("VBoxContainer/HBoxContainer")
+WorldPath = NodePath("../World")
+WorldCameraPanSpeed = 20.0
+WorldCameraRotateSpeed = 180.0
+WorldCameraZoomDelta = 1.0
+WorldCameraMinDistance = 2.0
+WorldCameraMaxDistance = 50.0
+WorldCameraMinSize = 10.0
+WorldCameraMaxSize = 50.0
+WorldViewportPath = NodePath("VBoxContainer/HBoxContainer2/ViewportContainer/Viewport")
+TilesetContainerPath = NodePath("VBoxContainer/HBoxContainer2/VBoxContainer/ReferenceRect/ScrollContainer/TilesetContainer")
+ImportTileButtonPath = NodePath("VBoxContainer/HBoxContainer2/VBoxContainer/ImportTileButton")
+PreviewMeshInstancePath = NodePath("Preview/PreviewViewportContainer/PreviewViewport/PreviewMeshInstance")
+PreviewCameraPath = NodePath("Preview/PreviewViewportContainer/PreviewViewport/PreviewCamera")
+DeleteTilesButtonPath = NodePath("VBoxContainer/HBoxContainer2/VBoxContainer/DeleteButtonsHBox/DeleteTilesButton")
+DeleteObjectsButtonPath = NodePath("VBoxContainer/HBoxContainer2/VBoxContainer/DeleteButtonsHBox/DeleteObjectsButton")
+HeightLabelPath = NodePath("HeightLabel")
+ModeLabelPath = NodePath("ModeLabel")
+ObjectTemplatePath = NodePath("../World/ObjectTemplate")
+ObjectsOptionButtonPath = NodePath("VBoxContainer/HBoxContainer2/VBoxContainer/ObjectsHBox/ObjectsOptionButton")
+ParamSpinBoxPath = NodePath("VBoxContainer/HBoxContainer2/VBoxContainer/ObjectParamHBox/ParamSpinBox")
+PreviewCameraOffset = Vector3( 0, 0.25, 0 )
+PreviewCameraDistance = 5.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EditorPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 5.0
+margin_top = 5.0
+margin_right = -5.0
+margin_bottom = -5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="EditorPanel/VBoxContainer"]
+margin_right = 1014.0
+margin_bottom = 20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FileButton" type="MenuButton" parent="EditorPanel/VBoxContainer/HBoxContainer"]
+margin_right = 35.0
+margin_bottom = 20.0
+focus_neighbour_right = NodePath("../EditButton")
+focus_next = NodePath("../EditButton")
+custom_styles/hover = SubResource( 1 )
+text = "File"
+switch_on_hover = true
+
+[node name="EditButton" type="MenuButton" parent="EditorPanel/VBoxContainer/HBoxContainer"]
+margin_left = 39.0
+margin_right = 75.0
+margin_bottom = 20.0
+focus_neighbour_left = NodePath("../FileButton")
+focus_previous = NodePath("../FileButton")
+focus_mode = 2
+text = "Edit"
+switch_on_hover = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="EditorPanel/VBoxContainer"]
+margin_top = 24.0
+margin_right = 1014.0
+margin_bottom = 590.0
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="EditorPanel/VBoxContainer/HBoxContainer2"]
+margin_right = 202.0
+margin_bottom = 566.0
+rect_min_size = Vector2( 202, 0 )
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.25
+
+[node name="RotateContainer" type="Control" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_right = 202.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Label" type="Label" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/RotateContainer"]
+margin_top = 3.0
+margin_right = 68.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Rotate Tile"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RotateLeftButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/RotateContainer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -105.0
+margin_right = -55.0
+margin_bottom = 20.0
+text = "<-"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RotateRightButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/RotateContainer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -50.0
+margin_bottom = 20.0
+text = "->"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LayerContainer" type="Control" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 24.0
+margin_right = 202.0
+margin_bottom = 44.0
+rect_min_size = Vector2( 0, 20 )
+
+[node name="Label" type="Label" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/LayerContainer"]
+margin_top = 3.0
+margin_right = 68.0
+margin_bottom = 17.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Switch Layer"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MoveUpButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/LayerContainer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -105.0
+margin_right = -55.0
+margin_bottom = 20.0
+text = "Up"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MoveDownButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/LayerContainer"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -50.0
+margin_bottom = 20.0
+text = "Down"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DeleteButtonsHBox" type="HBoxContainer" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 48.0
+margin_right = 202.0
+margin_bottom = 68.0
+
+[node name="DeleteTilesButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/DeleteButtonsHBox"]
+margin_right = 89.0
+margin_bottom = 20.0
+shortcut = SubResource( 3 )
+text = "Delete Tiles"
+
+[node name="DeleteObjectsButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/DeleteButtonsHBox"]
+margin_left = 93.0
+margin_right = 202.0
+margin_bottom = 20.0
+shortcut = SubResource( 3 )
+text = "Delete Objects"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SwapCameraModeButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 72.0
+margin_right = 202.0
+margin_bottom = 92.0
+text = "Top-Down Camera"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResetCameraAngleButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 96.0
+margin_right = 202.0
+margin_bottom = 116.0
+text = "Reset Camera Angle"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ObjectsHBox" type="HBoxContainer" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 120.0
+margin_right = 202.0
+margin_bottom = 140.0
+
+[node name="Label2" type="Label" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ObjectsHBox"]
+margin_top = 3.0
+margin_right = 50.0
+margin_bottom = 17.0
+text = "Objects"
+align = 1
+
+[node name="ObjectsOptionButton" type="OptionButton" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ObjectsHBox"]
+margin_left = 54.0
+margin_right = 202.0
+margin_bottom = 20.0
+size_flags_horizontal = 3
+
+[node name="ObjectParamHBox" type="HBoxContainer" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 144.0
+margin_right = 202.0
+margin_bottom = 168.0
+
+[node name="Label" type="Label" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ObjectParamHBox"]
+margin_top = 5.0
+margin_right = 40.0
+margin_bottom = 19.0
+text = "Param"
+
+[node name="ParamSpinBox" type="SpinBox" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ObjectParamHBox"]
+margin_left = 44.0
+margin_right = 202.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+max_value = 0.0
+rounded = true
+allow_greater = true
+
+[node name="HSeparator" type="HSeparator" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 172.0
+margin_right = 202.0
+margin_bottom = 176.0
+
+[node name="Label" type="Label" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 180.0
+margin_right = 202.0
+margin_bottom = 194.0
+text = "Tileset"
+align = 1
+
+[node name="ReferenceRect" type="Panel" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 198.0
+margin_right = 202.0
+margin_bottom = 542.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ColorRect" type="ColorRect" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color( 0.290196, 0.290196, 0.290196, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ReferenceRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 110, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TilesetContainer" type="VBoxContainer" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ReferenceRect/ScrollContainer"]
+margin_right = 202.0
+margin_bottom = 344.0
+rect_min_size = Vector2( 202, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SelectedTileRect" type="ReferenceRect" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ReferenceRect"]
+visible = false
+anchor_right = 1.0
+mouse_filter = 2
+border_color = Color( 1, 1, 1, 1 )
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+visible = false
+margin_top = 346.0
+margin_right = 202.0
+margin_bottom = 542.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ImportTileButton" type="Button" parent="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer"]
+margin_top = 546.0
+margin_right = 202.0
+margin_bottom = 566.0
+text = "Import Tile"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ViewportContainer" type="ViewportContainer" parent="EditorPanel/VBoxContainer/HBoxContainer2"]
+margin_left = 206.0
+margin_right = 1014.0
+margin_bottom = 566.0
+mouse_filter = 1
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Viewport" type="Viewport" parent="EditorPanel/VBoxContainer/HBoxContainer2/ViewportContainer"]
+size = Vector2( 808, 566 )
+handle_input_locally = false
+msaa = 2
+render_target_update_mode = 3
+
+[node name="Camera" type="Camera" parent="EditorPanel/VBoxContainer/HBoxContainer2/ViewportContainer/Viewport"]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 10, 10 )
+keep_aspect = 0
+fov = 100.0
+
+[node name="ImportTileDialog" type="FileDialog" parent="EditorPanel"]
+margin_right = 315.0
+margin_bottom = 130.0
+popup_exclusive = true
+window_title = "Open File(s)"
+mode = 1
+access = 2
+filters = PoolStringArray( "*.gltf" )
+current_dir = "/n64/GridEditor"
+current_path = "/n64/GridEditor/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SaveLevelDialog" type="FileDialog" parent="EditorPanel"]
+margin_right = 315.0
+margin_bottom = 130.0
+popup_exclusive = true
+window_title = "Save Level"
+access = 2
+filters = PoolStringArray( "*.level" )
+current_dir = "/n64/GridEditor"
+current_path = "/n64/GridEditor/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="OpenLevelDialog" type="FileDialog" parent="EditorPanel"]
+margin_right = 356.0
+margin_bottom = 130.0
+popup_exclusive = true
+window_title = "Open a File"
+mode = 0
+access = 2
+filters = PoolStringArray( "*.level" )
+current_dir = "/n64/GridEditor"
+current_path = "/n64/GridEditor/"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Preview" type="Control" parent="EditorPanel"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -105.0
+margin_top = -105.0
+margin_right = -5.0
+margin_bottom = -5.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PreviewBackground" type="ColorRect" parent="EditorPanel/Preview"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0.552941, 1, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PreviewViewportContainer" type="ViewportContainer" parent="EditorPanel/Preview"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PreviewViewport" type="Viewport" parent="EditorPanel/Preview/PreviewViewportContainer"]
+size = Vector2( 100, 100 )
+own_world = true
+transparent_bg = true
+handle_input_locally = false
+msaa = 2
+render_target_update_mode = 3
+
+[node name="PreviewCamera" type="Camera" parent="EditorPanel/Preview/PreviewViewportContainer/PreviewViewport"]
+transform = Transform( 0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 7.071, 10, 7.071 )
+fov = 15.0
+size = 3.72
+
+[node name="PreviewMeshInstance" type="MeshInstance" parent="EditorPanel/Preview/PreviewViewportContainer/PreviewViewport"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="EditorPanel/Preview/PreviewViewportContainer/PreviewViewport"]
+environment = ExtResource( 1 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="EditorPanel/Preview/PreviewViewportContainer/PreviewViewport/WorldEnvironment"]
+transform = Transform( -0.725335, 0.0559301, -0.68612, -0.641774, -0.415494, 0.644585, -0.249027, 0.907875, 0.337267, -2.9517, 3.47428, 0 )
+
+[node name="PreviewRect" type="ReferenceRect" parent="EditorPanel/Preview"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+border_color = Color( 1, 1, 1, 1 )
+border_width = 2.0
+editor_only = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeightLabel" type="Label" parent="EditorPanel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -120.0
+margin_top = 30.0
+margin_bottom = 50.0
+text = "Height: "
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ModeLabel" type="Label" parent="EditorPanel"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -120.0
+margin_top = 50.0
+margin_bottom = 67.0
+text = "Editing:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PrefabTilesetEntry" type="HBoxContainer" parent="."]
+visible = false
+margin_left = 5.0
+margin_top = 47.0
+margin_right = 207.0
+margin_bottom = 97.0
+
+[node name="TileNameLabel" type="Label" parent="PrefabTilesetEntry"]
+margin_top = 18.0
+margin_right = 99.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 50, 0 )
+size_flags_horizontal = 3
+text = "TileName"
+
+[node name="ViewportContainer" type="ViewportContainer" parent="PrefabTilesetEntry"]
+margin_left = 103.0
+margin_right = 202.0
+margin_bottom = 50.0
+rect_min_size = Vector2( 50, 50 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+
+[node name="Viewport" type="Viewport" parent="PrefabTilesetEntry/ViewportContainer"]
+own_world = true
+transparent_bg = true
+handle_input_locally = false
+render_target_update_mode = 0
+
+[node name="World" type="Spatial" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="World"]
+environment = ExtResource( 1 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="World/WorldEnvironment"]
+transform = Transform( -0.725335, 0.0559304, -0.68612, -0.641774, -0.415494, 0.644585, -0.249027, 0.907875, 0.337267, -2.9517, 3.47428, 0 )
+
+[node name="GridMap" type="GridMap" parent="World"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0 )
+cell_size = Vector3( 1, 1, 1 )
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="SelectionMesh" type="MeshInstance" parent="World"]
+transform = Transform( 1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, 0, 0, 0 )
+visible = false
+mesh = SubResource( 4 )
+material/0 = SubResource( 5 )
+
+[node name="HoverMesh" type="MeshInstance" parent="World"]
+transform = Transform( 1.3, 0, 0, 0, 1.3, 0, 0, 0, 1.3, 0, 0, 0 )
+visible = false
+mesh = SubResource( 4 )
+material/0 = SubResource( 6 )
+
+[node name="ObjectTemplate" type="Spatial" parent="World"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -0.5 )
+visible = false
+
+[node name="MeshInstance" type="MeshInstance" parent="World/ObjectTemplate"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.394, 0 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="Viewport" type="Viewport" parent="World/ObjectTemplate"]
+size = Vector2( 960, 240 )
+own_world = true
+transparent_bg = true
+
+[node name="NameLabel" type="Label" parent="World/ObjectTemplate/Viewport"]
+anchor_right = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 9 )
+text = "Mend-E"
+align = 1
+
+[node name="Nametag" type="Sprite3D" parent="World/ObjectTemplate"]
+transform = Transform( 0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 1, 0 )
+flip_v = true
+billboard = 1
+
+[connection signal="pressed" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/RotateContainer/RotateLeftButton" to="EditorPanel" method="RotateLeftPressed"]
+[connection signal="pressed" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/RotateContainer/RotateRightButton" to="EditorPanel" method="RotateRightPressed"]
+[connection signal="pressed" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/LayerContainer/MoveUpButton" to="EditorPanel" method="MoveUpPressed"]
+[connection signal="pressed" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/LayerContainer/MoveDownButton" to="EditorPanel" method="MoveDownPressed"]
+[connection signal="pressed" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/DeleteButtonsHBox/DeleteTilesButton" to="EditorPanel" method="DeleteModePressed"]
+[connection signal="pressed" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/DeleteButtonsHBox/DeleteObjectsButton" to="EditorPanel" method="DeleteObjectsPressed"]
+[connection signal="pressed" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/SwapCameraModeButton" to="EditorPanel" method="SwapCameraModePressed"]
+[connection signal="pressed" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ResetCameraAngleButton" to="EditorPanel" method="ResetCameraAnglePressed"]
+[connection signal="item_selected" from="EditorPanel/VBoxContainer/HBoxContainer2/VBoxContainer/ObjectsHBox/ObjectsOptionButton" to="EditorPanel" method="ObjectEntrySelected"]

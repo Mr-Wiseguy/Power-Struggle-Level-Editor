@@ -1,0 +1,161 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "",
+"class": "EditorSceneImporterGLTF",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/EditorSceneImporterGLTF.gdns"
+}, {
+"base": "",
+"class": "GLTFAccessor",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFAccessor.gdns"
+}, {
+"base": "",
+"class": "GLTFAnimation",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFAnimation.gdns"
+}, {
+"base": "",
+"class": "GLTFBufferView",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFBufferView.gdns"
+}, {
+"base": "",
+"class": "GLTFCamera",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFCamera.gdns"
+}, {
+"base": "",
+"class": "GLTFDocument",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFDocument.gdns"
+}, {
+"base": "",
+"class": "GLTFLight",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFLight.gdns"
+}, {
+"base": "",
+"class": "GLTFMesh",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFMesh.gdns"
+}, {
+"base": "",
+"class": "GLTFNode",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFNode.gdns"
+}, {
+"base": "",
+"class": "GLTFSkeleton",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFSkeleton.gdns"
+}, {
+"base": "",
+"class": "GLTFSkin",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFSkin.gdns"
+}, {
+"base": "",
+"class": "GLTFSpecGloss",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFSpecGloss.gdns"
+}, {
+"base": "Resource",
+"class": "GLTFState",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFState.gdns"
+}, {
+"base": "Resource",
+"class": "GLTFTexture",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/GLTFTexture.gdns"
+}, {
+"base": "PackedScene",
+"class": "PackedSceneGLTF",
+"language": "NativeScript",
+"path": "res://addons/godot_gltf/PackedSceneGLTF.gdns"
+} ]
+_global_script_class_icons={
+"EditorSceneImporterGLTF": "",
+"GLTFAccessor": "",
+"GLTFAnimation": "",
+"GLTFBufferView": "",
+"GLTFCamera": "",
+"GLTFDocument": "",
+"GLTFLight": "",
+"GLTFMesh": "",
+"GLTFNode": "",
+"GLTFSkeleton": "",
+"GLTFSkin": "",
+"GLTFSpecGloss": "",
+"GLTFState": "",
+"GLTFTexture": "",
+"PackedSceneGLTF": ""
+}
+
+[application]
+
+config/name="GridEditor"
+run/main_scene="res://Scenes/MainScene.tscn"
+config/icon="res://icon.png"
+
+[input]
+
+PanLeft={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":65,"unicode":0,"echo":false,"script":null)
+ ]
+}
+PanRight={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":68,"unicode":0,"echo":false,"script":null)
+ ]
+}
+PanForward={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":87,"unicode":0,"echo":false,"script":null)
+ ]
+}
+PanBackward={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":83,"unicode":0,"echo":false,"script":null)
+ ]
+}
+RotateLeft={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":81,"unicode":0,"echo":false,"script":null)
+ ]
+}
+RotateRight={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":69,"unicode":0,"echo":false,"script":null)
+ ]
+}
+ZoomIn={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":4,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+ZoomOut={
+"deadzone": 0.5,
+"events": [ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"button_mask":0,"position":Vector2( 0, 0 ),"global_position":Vector2( 0, 0 ),"factor":1.0,"button_index":5,"pressed":false,"doubleclick":false,"script":null)
+ ]
+}
+
+[physics]
+
+common/enable_pause_aware_picking=true
+3d/physics_engine="GodotPhysics"
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
